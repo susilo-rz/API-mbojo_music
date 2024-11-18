@@ -2,10 +2,10 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
-const ngrok = require("ngrok");
+// const ngrok = require("ngrok");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const dirPath = "E:/API-mbojo_music/rawa_mbojo"; // Path lagu
 const imagesPath = "E:/API-mbojo_music/images"; // Path gambar
 

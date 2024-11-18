@@ -101,14 +101,14 @@ app.listen(PORT, async () => {
   console.log(`Server running on http://localhost:${PORT}`);
 
   // Setup ngrok untuk menampilkan URL publik
-  try {
-    const url = await ngrok.connect({
-      addr: PORT,
-      authtoken: "2oyFIDYxIiUi5aPhGatQcIt0uoz_6LHEBxRd1BnJ5xW1DsDaf", // Token Anda
-    });
+  // try {
+  //   const url = await ngrok.connect({
+  //     addr: PORT,
+  //     authtoken: "2oyFIDYxIiUi5aPhGatQcIt0uoz_6LHEBxRd1BnJ5xW1DsDaf", // Token Anda
+  //   });
 
-    console.log(`Ngrok ingress established at: ${url}`);
-  } catch (error) {
-    console.error("Failed to connect to ngrok:", error);
-  }
+  //   console.log(`Ngrok ingress established at: ${url}`);
+  // } catch (error) {
+  //   console.error("Failed to connect to ngrok:", error);
+  // }
 });
